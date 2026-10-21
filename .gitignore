@@ -1,6 +1,21 @@
-__pycache__/
-*.pyc
-.venv/
-venv/
-models/
+# macOS junk
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv-test/
+venv/
+
+# Env & secrets
+.env
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Model artifacts are trained locally / in CI - never committed
+models/
