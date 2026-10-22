@@ -40,3 +40,6 @@ jobs:
 
       - name: Run test suite (stress-testing + explainability over the committed model)
         run: python -m pytest tests -q
+
+      - name: Check the entry point script
+        run: bash -n setup.sh
