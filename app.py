@@ -8,7 +8,6 @@ import streamlit as st
 
 from src.predict import predict_default
 
-
 ROOT_DIR = Path(__file__).resolve().parent
 META_PATH = ROOT_DIR / "models" / "metadata.json"
 

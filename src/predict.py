@@ -2,11 +2,9 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Dict, Tuple
 
 import joblib
 import pandas as pd
-
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 MODEL_PATH = ROOT_DIR / "models" / "credit_risk_pipeline.joblib"
@@ -21,7 +19,7 @@ def load_model_and_metadata():
     return model, metadata
 
 
-def predict_default(input_payload: Dict) -> Tuple[int, float]:
+def predict_default(input_payload: dict) -> tuple[int, float]:
     model, metadata = load_model_and_metadata()
     threshold = float(metadata.get("threshold", 0.5))
     features = metadata.get("features", [])

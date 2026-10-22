@@ -13,7 +13,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-
 ROOT_DIR = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT_DIR / "data" / "raw" / "loan_data.csv"
 MODEL_DIR = ROOT_DIR / "models"
