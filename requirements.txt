@@ -1,9 +1,11 @@
-# Match the environment that trained the committed pipeline
-# (models/metadata.json artifacts were trained on scikit-learn 1.8).
+# Match the environment that produced the committed pipeline artifact.
+# models/credit_risk_pipeline.joblib was pickled with scikit-learn 1.6.1, which
+# still defines compose._column_transformer._RemainderColsList. Newer 1.8 builds
+# cannot unpickle it, so the pin is exact rather than a range.
 pandas>=2.2,<3.0
 numpy>=1.26
-scikit-learn>=1.8,<1.9
+scikit-learn==1.6.1
 matplotlib>=3.8
 seaborn>=0.13
-streamlit>=1.36
+streamlit>=1.50,<2.0
 joblib>=1.3
