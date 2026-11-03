@@ -9,6 +9,10 @@ engine:
   interest rates increase 2%?"
 - **Per-applicant explainability** — why was *this* applicant flagged?
 
+> **Live demo:** https://credit-risk-app-92s8.onrender.com
+>
+> Free-tier hosting: the first load after idle can take 30-60 seconds.
+
 ## Stress testing
 
 ```bash
